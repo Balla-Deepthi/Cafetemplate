@@ -1,0 +1,263 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Inconsolata", serif;
+}
+:root
+{
+    --text-color:white;
+}
+.head
+{
+    background-color: black;
+    display: flex;
+     /* justify-content: space-around;  */
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.head a
+{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    
+}
+.head a:hover
+{
+    background-color: grey;
+    color: black;
+    
+    
+}
+body,html
+{
+    height: 100%;
+}
+.bg-image
+{
+    background-image: url('https://www.w3schools.com/w3images/coffeehouse.jpg');
+    min-height: 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.cafe-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   color: var(--text-color);
+   font-size: 85px;
+   text-align: center;
+   line-height: 100px;
+}
+.text
+{
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 6px;
+}
+.text span:first-child
+{
+    background-color: black;
+}
+.text span
+{
+    padding: 5px;
+}
+.head-cafe p
+{
+    color: var(--text-color);
+    background-color: black;
+    padding: 6px;
+    
+    display: inline-block;
+    letter-spacing: 5px;
+    
+}
+.head-cafe
+{
+    padding: 80px;
+    
+}
+main
+{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+}
+.para1,.para2,.border-text
+{
+    width: 700px;
+    text-align: justify;
+}
+.para2
+{
+    margin: 20px;
+}
+.border-text
+{
+    background-color: lightgrey;
+    border-left: 5px solid grey;
+    padding: 20px;
+}
+.border-text>p:first-child
+{
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.coffeeimage
+{
+    width: 700px;
+   
+    margin: 20px;
+}
+.coffeeimage>img
+{
+    /* object-fit: cover; */
+    width: 700px;
+}
+.para3
+{
+    width: 700px;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.head-menu
+{
+    color: var(--text-color);
+    background-color: black;
+    margin: 50px;
+}
+.head-menu>p
+{
+    padding: 10px;
+    letter-spacing: 4px;
+}
+.main-container
+{
+    box-shadow: 0px 0px 5px 1px grey;
+    
+}
+.main-container>input
+{
+    display: none;
+   
+    
+    
+}
+.labelradio
+{
+    display: flex;
+    width: 700px;
+    box-shadow: 0px 0px 5px 1px grey;
+    padding: 5px;
+}
+.labelradio>label
+{
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+}
+.eat-container,.drink-container
+{
+    display: none;
+}
+#eat:checked~.eat-container,#drink:checked~.drink-container
+{
+    display:flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 15px;
+}
+.bread>p:last-child,.honey>p:last-child,.waffel>p:last-child,.eggs>p:last-child,.pancakes>p:last-child,.coffee>p:last-child,.Chocolato>p:last-child,.Corretto>p:last-child,.IcedTea>p:last-child,.soda>p:last-child
+{
+    color: grey;
+}
+.coffee,.Chocolato,.Corretto,.IcedTea,.soda,.pancakes,.eggs,.waffel,.honey,.bread
+{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#eat:checked~.labelradio>.eat,#drink:checked~.labelradio>.drink
+{
+    background-color: rgb(93, 91, 91);
+    color: white;
+}
+.cafeimg
+{
+    padding: 20px;
+    
+}
+.cafeimg>img
+{
+    width: 700px;
+}
+.find-container
+{
+    margin: 40px;
+    /* width: 700px; */
+    text-align: center;
+    letter-spacing: 4px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    
+}
+.addresstext
+{
+    width: 700px;
+}
+.map-image>img
+{
+    width: 700px;
+    margin: 10px;
+}
+.fyi-text>span:first-child
+{
+    background-color: black;
+    color: white;
+}
+.fyi-text
+{
+    width: 700px;
+    padding: 5px;
+}
+.reservetext
+{
+    width: 700px;
+    padding: 10px;
+}
+form>input
+{
+    width: 700px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+}
+.submit
+{
+    background-color: black;
+    color: white;
+    width: 120px;
+}
+
+
